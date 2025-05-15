@@ -11,8 +11,48 @@
 </head>
 
 <body>
-    <h1 class="text-2xl text-yellow-500">Welcome to homepage</h1>
+    <h1 class="text-2xl text-center text-green-500 font-bold my-5">Welcome to homepage</h1>
 
+    <main class="text-center">
+        <div class="">
+
+            <!-- available balance info -->
+            <div class="stats shadow">
+                <div class="stat">
+                    <div class="stat-title text-xl font-bold">Available Balance</div>
+                    <div class="stat-value">9400</div>
+                </div>
+            </div>
+
+            <div class="divider divider-success"></div>
+
+            <!-- user action buttons -->
+            <button class="btn btn-primary mr-20">Add Money</button>
+            <button class="btn btn-secondary">Cash Out</button>
+
+            <div class="divider divider-success"></div>
+
+            <!-- user input forms -->
+            <div class="flex justify-center items-center my-10">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label">Mobile Number</label>
+                            <input id="mobile-num" type="text" class="input" placeholder="Enter Your Mobile Number" />
+                            <label class="label">Pin Number</label>
+                            <input id="pin-num" type="password" class="input" placeholder="Enter Your 4 Digit Pin" />
+                            <button id="btn-login" class="btn btn-primary mt-4">Add Money</button>
+                        </fieldset>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="../js/homeAddMoney.js"></script>
 </body>
 
 </html>
