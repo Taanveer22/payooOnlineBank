@@ -18,10 +18,10 @@ document
     event.preventDefault();
 
     // s-2
-    const amountInput = document.getElementById("amount-input").value;
+    const amountInput = document.getElementById("add-money-amount-input").value;
     console.log(amountInput);
 
-    const pinInput = document.getElementById("pin-input").value;
+    const pinInput = document.getElementById("add-money-pin-input").value;
     console.log(pinInput);
 
     // s-3
