@@ -12,9 +12,9 @@ console.log("home add money js connected");
 
 // s-1
 document
-  .getElementById("btn-add-money-form")
+  .getElementById("btn-add-money")
   .addEventListener("click", function (event) {
-    console.log("add money form button clicked");
+    console.log("add money button clicked");
     event.preventDefault();
 
     // s-2

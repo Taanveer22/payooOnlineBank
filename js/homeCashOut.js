@@ -3,10 +3,10 @@ console.log("home cash out js connected");
 
 // s-1
 document
-    .getElementById("btn-cash-out-form")
+    .getElementById("btn-cash-out")
     .addEventListener("click", function (event) {
         event.preventDefault()
-        console.log('btn cash out form clicked');
+        console.log('btn cash out clicked');
 
         // s-2
         const amountInput = document.getElementById('cash-out-amount-input').value;

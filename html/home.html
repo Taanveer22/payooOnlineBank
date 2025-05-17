@@ -1,75 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>homepage</title>
     <!-- tailwind and daisy -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
+  </head>
 
-<body>
-    <h1 class="text-2xl text-center text-green-500 font-bold my-5">Welcome to homepage</h1>
+  <body>
+    <h1 class="text-2xl text-center text-green-500 font-bold my-5">
+      Welcome to homepage
+    </h1>
 
     <main class="text-center">
-        <div class="">
-
-            <!-- available balance info -->
-            <div class="stats shadow">
-                <div class="stat">
-                    <div class="stat-title text-xl font-bold">Available Balance</div>
-                    <div id="available-balance" class="stat-value">9400</div>
-                </div>
-            </div>
-
-            <div class="divider divider-success"></div>
-
-            <!-- user action buttons -->
-            <button id="btn-add-money" class="btn btn-primary mr-20">Add Money</button>
-            <button class="btn btn-secondary">Cash Out</button>
-
-            <div class="divider divider-success"></div>
-
-            <!-- add money forms -->
-            <div class="flex justify-center items-center my-10">
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <div class="card-body">
-                        <fieldset class="fieldset">
-                            <label class="label">Amount</label>
-                            <input id="add-money-amount-input" type="text" class="input" placeholder="Cash In Amount" />
-                            <label class="label">Pin</label>
-                            <input id="add-money-pin-input" type="password" class="input" placeholder="Enter Your Pin" />
-                            <button id="btn-add-money-form" class="btn btn-primary mt-4">Add Money</button>
-                        </fieldset>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- cash out forms-->
-            <div class="flex justify-center items-center my-10">
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
-                    <div class="card-body">
-                        <fieldset class="fieldset">
-                            <label class="label">Amount</label>
-                            <input id="cash-out-amount-input" type="text" class="input" placeholder="Cash Out Amount" />
-                            <label class="label">Pin</label>
-                            <input id="cash-out-pin-input" type="password" class="input" placeholder="Enter Your Pin" />
-                            <button id="btn-cash-out-form" class="btn btn-secondary mt-4">Cash Out </button>
-                        </fieldset>
-                    </div>
-                </div>
-
-            </div>
-
-
+      <div class="">
+        <!-- available balance info -->
+        <div class="stats shadow">
+          <div class="stat">
+            <div class="stat-title text-xl font-bold">Available Balance</div>
+            <div id="available-balance" class="stat-value">9400</div>
+          </div>
         </div>
+
+        <div class="divider divider-success"></div>
+
+        <!-- user action buttons -->
+        <button id="btn-show-add-money" class="btn btn-primary mr-20">
+          Add Money
+        </button>
+        <button id="btn-show-cash-out" class="btn btn-secondary">
+          Cash Out
+        </button>
+
+        <div class="divider divider-success"></div>
+
+        <!-- add money forms -->
+        <div id="form-add-money">
+          <div class="flex justify-center items-center my-10">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">Amount</label>
+                  <input
+                    id="add-money-amount-input"
+                    type="text"
+                    class="input"
+                    placeholder="Cash In Amount"
+                  />
+                  <label class="label">Pin</label>
+                  <input
+                    id="add-money-pin-input"
+                    type="password"
+                    class="input"
+                    placeholder="Enter Your Pin"
+                  />
+                  <button id="btn-add-money" class="btn btn-primary mt-4">
+                    Add Money
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- cash out forms-->
+        <div id="form-cash-out" class="hidden">
+          <div class="flex justify-center items-center my-10">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">Amount</label>
+                  <input
+                    id="cash-out-amount-input"
+                    type="text"
+                    class="input"
+                    placeholder="Cash Out Amount"
+                  />
+                  <label class="label">Pin</label>
+                  <input
+                    id="cash-out-pin-input"
+                    type="password"
+                    class="input"
+                    placeholder="Enter Your Pin"
+                  />
+                  <button id="btn-cash-out" class="btn btn-secondary mt-4">
+                    Cash Out
+                  </button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="../js/homeAddMoney.js"></script>
     <script src="../js/homeCashOut.js"></script>
-</body>
-
+    <script src="../js/toggleButton.js"></script>
+  </body>
 </html>
